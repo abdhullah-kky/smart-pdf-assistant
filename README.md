@@ -27,20 +27,22 @@ Before running the project, ensure you have the following installed on your Wind
 ## ⚙️ Installation & Setup
 
 1. **Install uv (Package Manager)**:
-   '''pip install uv'''
+   ```bash
+   pip install uv
+   '''
 
-2. **Clone the Repository**:
+3. **Clone the Repository**:
    git clone (https://github.com/abdhullah-kky/smart-pdf-assistant)
    cd smart-pdf-bot
 
-3. **Install Dependencies**:
+4. **Install Dependencies**:
    uv sync
 
-4. **Environment Variables**:
+5. **Environment Variables**:
    Create a .env file in the root directory and add your OpenRouter API Key:
    OPENROUTER_SECRET="your_openrouter_api_key_here"
 
-5. **Path Configuration**:
+6. **Path Configuration**:
    Open app.py and verify the paths for Tesseract and Poppler if you installed them in different directories:
    TESSERACT_PATH = os.getenv("TESSERACT_PATH", r'C:\Program Files\Tesseract-OCR\tesseract.exe')
    POPPLER_PATH = os.getenv("POPPLER_PATH", r'C:\poppler\Library\bin')
