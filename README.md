@@ -55,9 +55,9 @@ Before running the project, ensure you have the following installed on your Wind
 
 ## 🏃 How to Run
 To start the web application, run the following command in your terminal:
-
+```bash
 uv run streamlit run app.py
-
+```
 The application will automatically open in your default browser at http://localhost:8501.
 
 ## 👤 Author
