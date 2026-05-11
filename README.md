@@ -50,7 +50,7 @@ Before running the project, ensure you have the following installed on your Wind
 
 9. **Path Configuration**:
    Open app.py and verify the paths for Tesseract and Poppler if you installed them in different directories:
-   ```bash
+   ```
    TESSERACT_PATH = os.getenv("TESSERACT_PATH", r'C:\Program Files\Tesseract-OCR\tesseract.exe')
    POPPLER_PATH = os.getenv("POPPLER_PATH", r'C:\poppler\Library\bin')
    ```
