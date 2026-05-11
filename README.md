@@ -27,7 +27,7 @@ Before running the project, ensure you have the following installed on your Wind
 ## ⚙️ Installation & Setup
 
 1. **Install uv (Package Manager)**:
-   pip install uv
+   '''pip install uv'''
 
 2. **Clone the Repository**:
    git clone (https://github.com/abdhullah-kky/smart-pdf-assistant)
