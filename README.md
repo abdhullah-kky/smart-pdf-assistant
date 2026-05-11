@@ -1,0 +1,57 @@
+# Smart PDF Document Assistant with Embedded Image Understanding
+
+An AI-powered chatbot that allows users to upload PDF documents and analyze both text and embedded images using RAG (Retrieval-Augmented Generation) and OCR. This project was developed as part of the ACB Project Proposal.
+
+## 🚀 Features
+- **PDF Text Extraction**: Reads standard text from PDF pages.
+- **OCR (Optical Character Recognition)**: Extracts text from images and diagrams embedded inside PDFs using Tesseract OCR.
+- **RAG Pipeline**: Uses LangChain and ChromaDB to provide context-aware answers.
+- **Modern UI**: A clean, interactive web interface built with Streamlit.
+- **Powered by OpenRouter**: Uses advanced models (like Mistral) for accurate, free responses.
+
+## 🛠️ Technology Stack
+- **Backend**: Python
+- **LLM Framework**: LangChain
+- **UI**: Streamlit
+- **Vector Database**: ChromaDB
+- **OCR Engine**: Tesseract OCR
+- **PDF Processing**: pdf2image (Poppler)
+
+## 📋 Prerequisites
+Before running the project, ensure you have the following installed on your Windows system:
+
+1. **Python**: Version 3.10 or higher.
+2. **Tesseract OCR**: [Download Installer](https://github.com/UB-Mannheim/tesseract/wiki). Install it to C:\Program Files\Tesseract-OCR.
+3. **Poppler**: [Download Binaries](https://github.com/oschwartz10612/poppler-windows/releases/). Extract to C:\poppler.
+
+## ⚙️ Installation & Setup
+
+1. **Install uv (Package Manager)**:
+   pip install uv
+
+2. **Clone the Repository**:
+   git clone <your-github-link>
+   cd smart-pdf-bot
+
+3. **Install Dependencies**:
+   uv sync
+
+4. **Environment Variables**:
+   Create a .env file in the root directory and add your OpenRouter API Key:
+   OPENROUTER_SECRET="your_openrouter_api_key_here"
+
+5. **Path Configuration**:
+   Open app.py and verify the paths for Tesseract and Poppler if you installed them in different directories:
+   TESSERACT_PATH = os.getenv("TESSERACT_PATH", r'C:\Program Files\Tesseract-OCR\tesseract.exe')
+   POPPLER_PATH = os.getenv("POPPLER_PATH", r'C:\poppler\Library\bin')
+
+## 🏃 How to Run
+To start the web application, run the following command in your terminal:
+
+uv run streamlit run app.py
+
+The application will automatically open in your default browser at http://localhost:8501.
+
+## 👤 Author
+- **Mohamed Ramees Abdhullah**
+- Project for American Corner, Batticaloa.
