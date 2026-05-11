@@ -1,13 +1,13 @@
 # Smart PDF Document Assistant with Embedded Image Understanding
 
-An AI-powered chatbot that allows users to upload PDF documents and analyze both text and embedded images using RAG (Retrieval-Augmented Generation) and OCR. This project was developed as part of the ACB Project Proposal.
+An AI-powered chatbot that allows users to upload PDF documents and analyze both text and embedded images using RAG (Retrieval-Augmented Generation) and OCR.
 
 ## 🚀 Features
 - **PDF Text Extraction**: Reads standard text from PDF pages.
 - **OCR (Optical Character Recognition)**: Extracts text from images and diagrams embedded inside PDFs using Tesseract OCR.
 - **RAG Pipeline**: Uses LangChain and ChromaDB to provide context-aware answers.
 - **Modern UI**: A clean, interactive web interface built with Streamlit.
-- **Powered by OpenRouter**: Uses advanced models (like Mistral) for accurate, free responses.
+- **Powered by OpenRouter**: Uses advanced models (like Llama) for accurate, free responses.
 
 ## 🛠️ Technology Stack
 - **Backend**: Python
