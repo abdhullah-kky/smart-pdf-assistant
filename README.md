@@ -43,8 +43,8 @@ Before running the project, ensure you have the following installed on your Wind
    ```
 
 7. **Environment Variables**:
-   Create a .env file in the root directory and add your OpenRouter API Key:
-   OPENROUTER_SECRET="your_openrouter_api_key_here"
+   ```Create a .env file in the root directory and add your OpenRouter API Key:
+   OPENROUTER_SECRET="your_openrouter_api_key_here"```
 
 8. **Path Configuration**:
    Open app.py and verify the paths for Tesseract and Poppler if you installed them in different directories:
