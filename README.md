@@ -30,7 +30,7 @@ Before running the project, ensure you have the following installed on your Wind
    pip install uv
 
 2. **Clone the Repository**:
-   git clone <your-github-link>
+   git clone (https://github.com/abdhullah-kky/smart-pdf-assistant)
    cd smart-pdf-bot
 
 3. **Install Dependencies**:
