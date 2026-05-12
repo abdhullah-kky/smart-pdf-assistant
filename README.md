@@ -15,14 +15,12 @@ An AI-powered chatbot that allows users to upload PDF documents and analyze both
 - **UI**: Streamlit
 - **Vector Database**: ChromaDB
 - **OCR Engine**: Tesseract OCR
-- **PDF Processing**: pdf2image (Poppler)
 
 ## 📋 Prerequisites
 Before running the project, ensure you have the following installed on your Windows system:
 
 1. **Python**: Version 3.10 or higher.
 2. **Tesseract OCR**: [Download Installer](https://github.com/UB-Mannheim/tesseract/wiki). Install it to `C:\Program Files\Tesseract-OCR`.
-3. **Poppler**: [Download Binaries](https://github.com/oschwartz10612/poppler-windows/releases/). Extract to `C:\poppler`.
 
 ## ⚙️ Installation & Setup
 
@@ -50,8 +48,7 @@ Before running the project, ensure you have the following installed on your Wind
 
 9. **Path Configuration**:
    Open `app.py` and verify the paths for Tesseract and Poppler if you installed them in different directories:\
-   `TESSERACT_PATH = os.getenv("TESSERACT_PATH", r'C:\Program Files\Tesseract-OCR\tesseract.exe')`\
-   `POPPLER_PATH = os.getenv("POPPLER_PATH", r'C:\poppler\Library\bin')`
+   `TESSERACT_PATH = os.getenv("TESSERACT_PATH", r'C:\Program Files\Tesseract-OCR\tesseract.exe')`
 
 ## 🏃 How to Run
 To start the web application, run the following command in your terminal:
