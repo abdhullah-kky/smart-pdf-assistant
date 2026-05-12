@@ -6,6 +6,13 @@ import streamlit as st
 from dotenv import load_dotenv
 from PIL import Image
 
+# Auto-install torchvision if it is missing to prevent errors for users
+try:
+    import torchvision
+except ImportError:
+    print("Optimization module missing. Auto-installing torchvision...")
+    os.system("uv pip install torchvision")
+
 # LangChain & RAG Imports
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
